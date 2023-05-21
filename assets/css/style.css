@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,24 +10,43 @@ body{
 
 .container{
     display: flex;
+    flex-direction: column;
+    gap: 1em;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 .card-content{
     display: flex;
-    padding: 10px;
-    border: 1px solid black;
+    gap: 1.5em;
+    padding: 15px;
     max-width: 300px;
+    height: 455px;
     flex-direction: column;
     align-items: center;
     background: hsl(0, 0%, 100%);
+    border-radius: 20px;
 }
 .card-content img{
     max-width: 288px;
     border-radius: 9px;
 }
-
+.card-details{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 246px;
+    text-align: center;
+}
+.card-details .card-title{
+    font-size: 20px;
+    font-weight: 800;
+}
+.card-details .card-description{
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
